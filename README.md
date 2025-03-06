@@ -4,6 +4,7 @@
 - my-app - How the AppBar works
 - navigation - How to navigate between screens
 - bottom-navigation - How to use the bottom navigation bar
+- counter-app - A simple counter app
 
 ### Running
 
