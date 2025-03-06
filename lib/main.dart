@@ -23,14 +23,7 @@ class MyApp extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
             ),
             padding: EdgeInsets.all(25),
-            child: Text(
-              "Hello World",
-              style: TextStyle(
-                color: Colors.deepPurple,
-                fontSize: 28,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+            child: Icon(Icons.favorite, size: 100, color: Colors.red),
           ),
         ),
       ),
