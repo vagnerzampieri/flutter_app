@@ -3,6 +3,7 @@
 - main - The main branch
 - my-app - How the AppBar works
 - navigation - How to navigate between screens
+- bottom-navigation - How to use the bottom navigation bar
 
 ### Running
 
