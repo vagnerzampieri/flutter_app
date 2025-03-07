@@ -25,6 +25,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       appBar: AppBar(centerTitle: true, title: Text('TO DO'), elevation: 0),
+,
       body: ListView.builder(
         itemCount: todoList.length,
         itemBuilder: (context, index) {
