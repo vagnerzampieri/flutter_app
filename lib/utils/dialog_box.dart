@@ -2,7 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/utils/my_bottom.dart';
 
 class DialogBox extends StatelessWidget {
-  const DialogBox({super.key});
+  final controller;
+  VoidCallback onSave;
+  VoidCallback onCancel;
+
+  DialogBox({
+    super.key,
+    required this.controller,
+    required this.onSave,
+    required this.onCancel,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +23,7 @@ class DialogBox extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             TextField(
+              controller: controller,
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 hintText: "Add a new task",
@@ -23,9 +33,9 @@ class DialogBox extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                MyBottom(text: "Save", onPressed: () {}),
+                MyBottom(text: "Save", onPressed: onSave),
                 const SizedBox(width: 8),
-                MyBottom(text: "Cancel", onPressed: () {}),
+                MyBottom(text: "Cancel", onPressed: onCancel),
               ],
             ),
           ],
