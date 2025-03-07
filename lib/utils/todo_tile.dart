@@ -19,7 +19,7 @@ class TodoTile extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.all(24),
         decoration: BoxDecoration(
-          color: Colors.grey,
+          color: Colors.deepPurple,
           borderRadius: BorderRadius.circular(12),
         ),
         child: Row(
@@ -32,6 +32,7 @@ class TodoTile extends StatelessWidget {
             Text(
               taskName,
               style: TextStyle(
+                color: Colors.white,
                 fontSize: 18,
                 decoration:
                     taskCompleted
